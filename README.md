@@ -24,3 +24,9 @@ sudo apt install mailutils
 ```
 0 7 * * * python3 crawlChineseWeather.py | mail -s subject email-Address
 ```
+如果要更改城市,只需打开中国天气网,找到想要更改城市的网址即可,
+http://www.weather.com.cn/weather/xxxxxxx.shtml
+更改下面网址
+```
+r = requests.get('http://www.weather.com.cn/weather/xxxxxxx.shtml',timeout = 30)
+```
