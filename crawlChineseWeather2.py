@@ -26,4 +26,4 @@ for i in range(6):
 	# temp2 = rtemp2[i].split('>')[1].split('<')[0]
 	# tplt = "{0:^10}\t{1:{6}^10}\t{2:}\t{3:<}\t{4:}\t{5:}"  
 	tplt = "{0:^10}\t{1:{4}^10}\t{2:}\t{3:<}\t{4:}" 
-	print(tplt.format(data,wea,temp1,"~" + temp2 ,chr(12288)))
+	print(tplt.format(data,wea,temp1,"最高气温:" + temp2+"度",chr(12288)))
